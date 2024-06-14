@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TP Final</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Inicio de Sesion</string>
+    <string name="registro">Registrar Usuario</string>
+    <string name="registro_libros">Registrar Libro</string>
+    <string name="edicion_libros">Editar Libro</string>
+    <string name="hint_usuario">Usuario</string>
+    <string name="hint_mail">Mail</string>
+    <string name="hint_contra">Contraseña</string>
+    <string name="hint_titulo">Título</string>
+    <string name="hint_autor">Autor</string>
+    <string name="hint_año">Año</string>
+    <string name="btn_registro">Registrar</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="btn_regreso">Cancelar</string>
+    <string name="btn_login">Ingresar</string>
+</resources>

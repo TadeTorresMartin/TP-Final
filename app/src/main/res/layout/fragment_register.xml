@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.RegisterFragment">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/LayoutMenu"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/vuelta_atras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/arrow_back_48dp"
+            android:focusable="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/LayoutMenu"
+            app:layout_constraintBottom_toBottomOf="@id/LayoutMenu"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Texto Registro -->
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/TVLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/LayoutUsuario"
+        android:text="@string/registro"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        />
+
+    <!-- Input Usuario -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LayoutUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/LayoutContra"
+        android:layout_margin="16dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TFUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_usuario"
+            android:layout_margin="16dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Input Mail -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LayoutMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/LayoutUsuario"
+        app:layout_constraintBottom_toBottomOf="@id/LayoutContra"
+        android:layout_margin="16dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TFMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_mail"
+            android:layout_margin="16dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Input Contraseña -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LayoutContra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/LayoutUsuario"
+        android:layout_margin="16dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TFContra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_contra"
+            android:layout_margin="16dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Boton Registro -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_registro"
+        android:textColor="#ffffff"
+        app:backgroundTint="#237A12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LayoutContra" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
